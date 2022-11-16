@@ -1,0 +1,29 @@
+
+### GET all books (WORKS)
+GET http://127.0.0.1:3001/api/books
+
+### GET book by id (WORKS)
+GET http://127.0.0.1:3001/api/books/2
+
+### CREATE a new book entry
+POST http://127.0.0.1:3001/api/books
+Content-Type: application/json
+
+{"title":"The Pearl","isbn":"9780435120252"}
+
+
+
+### DELETE a book by id
+DELETE http://127.0.0.1:3001/api/books/3
+
+### PUT a book
+PUT  http://127.0.0.1:3001/api/books/4
+Content-Type: application/json
+
+{"title":"The Pearls","isbn":"9780435120252"}
+
+### PATCH a book
+PATCH http://127.0.0.1:3001/api/books/4
+Content-Type: application/json
+
+{"title":"The Pearls"}
